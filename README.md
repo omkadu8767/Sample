@@ -1,4 +1,4 @@
-#Pract2
+#Pract2 Pattern
 
 import java.util.*;
 class Pract2{
@@ -17,7 +17,7 @@ class Pract2{
     }
 } 
 
-#Pract3 
+#Pract3 Types Of Variable
 
 import java.util.*;
 public class Pract3 {
@@ -32,7 +32,7 @@ public class Pract3 {
      }
 }
 
-#Pract4
+#Pract4    Overloading
 
 import java.util.Scanner;
 

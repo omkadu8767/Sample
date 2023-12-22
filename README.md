@@ -60,3 +60,82 @@ public class Pract4 {
         obj.area(2);
     }
 }
+
+#Pract5 Sorting
+public class Pract5 {
+    public static void main(String[] args) {
+        int arr[] = { 25, 40, 19, 8, 24 };
+        int temp = 0;
+
+        System.out.println("UnSorted Array:");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+
+#Pract6 overriding
+public class Pract6 {
+    class Parent {
+        void show() {
+            System.out.println("Parent Class");
+        }
+    }
+
+    class Child extends Parent {
+        void show() {
+            System.out.println("Child Class");
+        }
+    }
+
+    public static void main(String[] args) {
+        Pract6 pract6 = new Pract6(); 
+        Child c = pract6.new Child(); 
+        c.show();
+
+        Parent p = pract6.new Parent(); 
+        p.show();
+    }
+}
+
+        System.out.println("\nSorted Array:");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+
+#Pract7 multiple inheritance
+public class Pract7 {
+    interface Printable {
+        void print();
+    }
+
+    interface Showable {
+        void show();
+    }
+
+    class A implements Printable, Showable {
+        public void print() {
+            System.out.println("Hello");
+        }
+
+        public void show() {
+            System.out.println("World");
+        }
+    }
+
+    public static void main(String[] args) {
+        A a = new Pract7().new A(); 
+        a.print();
+        a.show();
+    }
+}
